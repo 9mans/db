@@ -57,7 +57,7 @@ public class insertApp1 {
 		int rowCount = pstmt.executeUpdate();
 		System.out.println(rowCount + " 개의 행이 추가 되었습니다.");
 		
-		// 5. 사용했던 자원을 반납한다
+		// 5. 사용했던 자원을 반납한다 반납은 역순으로
 		pstmt.close();
 		connection.close();
 		
